@@ -1,0 +1,584 @@
+{
+    "type": "table",
+    "database": null,
+    "name": "dragons",
+    "withoutRowId": false,
+    "strict": false,
+    "ddl": "CREATE TABLE dragons (\n  id INTEGER PRIMARY KEY AUTOINCREMENT,  -- Auto-increment the id\n  name TEXT NOT NULL,\n  class TEXT NOT NULL,\n  details TEXT NOT NULL,\n  image_url TEXT NOT NULL,\n  fandom_link TEXT NOT NULL\n);",
+    "columns": [
+        {
+            "name": "id",
+            "type": "INTEGER",
+            "constraints": [
+                {
+                    "type": "PRIMARY KEY",
+                    "definition": "PRIMARY KEY AUTOINCREMENT"
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "type": "TEXT",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "type": "TEXT",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "details",
+            "type": "TEXT",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "image_url",
+            "type": "TEXT",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "fandom_link",
+            "type": "TEXT",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL\n"
+                }
+            ]
+        }
+    ],
+    "rows": [
+        [
+            1,
+            "Catastrophic Quaken",
+            "Boulder",
+            "Features: Filled with spikes\\r\\nTriple-split jaw\\r\\nTough rock-like skin\\r\\n\\r\\nAbilities: Curling into a boulder\\r\\nCreating a shockwave\\r\\n\\r\\nColors: \\r\\nDark Grey or Brown with Pale underbelly\\r\\n\\r\\nSize: \\r\\nLarge: 30 feet (9.14 meters)\\r\\n\\r\\nWeight: 2,500 lbs (1133.99 kilograms)\\r\\n\\r\\nWingspan: \\r\\n8 feet (2.44 meters)\\r\\n\\r\\nDiet: \\r\\nRocks and Minerals\\r\\n\\r\\nHabitat: \\r\\nRocky terrains\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/9\/96\/CatastrophicQuaken_infobox.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Catastrophic_Quaken"
+        ],
+        [
+            2,
+            "Crimson Goregutter",
+            "Boulder",
+            "Features: Metallic, moose-like antlers\\r\\nAxe-shaped tail\\r\\nRock-shaped spines\\r\\n\\r\\nAbilities: \\r\\nBlazing antlers\\r\\nEar-splitting call\\r\\n\\r\\nColors: Crimson with purple details and light underside\\r\\n\\r\\nSize: Large 30 feet (9.14 meters)\\r\\n\\r\\nWeight: 2500 lbs (1133.981 kilograms)\\r\\n\\r\\nWingspan: 24 feet (7.32 meters)\\r\\n\\r\\nTrainable: Yes\\r\\n\\r\\nHabitat: UNKOWN\\r\\n\\r\\n",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/6\/63\/THW-Crimson_Goregutter-Transparent.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Crimson_Goregutter"
+        ],
+        [
+            3,
+            "Eruptodon",
+            "Boulder",
+            "Features: Spiky lobes and protrusions on back and tail\\r\\nLarge, round head\\r\\nTiny forelegs\\r\\n\\r\\nAbilities:Burrowing through the crust of a dormant volcano\\r\\nEating extremely large amounts of lava\\r\\nStopping and causing volcanic eruptions\\r\\nLava-proof skin\\r\\nHeat-resistant saliva\\r\\n\\r\\nColors:\\r\\nBright red and yellow with dirty brown plates\\r\\n\\r\\nSize: \\r\\nLarge: 93 feet 6 inches (28.49 meters) long Click the image\\r\\n50 feet 4 inches (15.35 meters) tall\\r\\n\\r\\nWeight: 2,400 pounds (1088.6 kilograms)\\r\\n\\r\\nWingspan: 139 feet 4 inches (42.46 meters)\\r\\n\\r\\nDiet: Lava\\r\\n\\r\\nHabitat: Inside or near Volcanoes\\r\\n\\r\\nTrainable: Yes\\r\\n",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/1\/19\/Eruptodon_Render.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Eruptodon"
+        ],
+        [
+            4,
+            "Gronckle",
+            "Boulder",
+            "Features: Bumps on body\\r\\nSmall wing to body ratio\\r\\nClubbed tail\\r\\nSharp canines\\r\\nBlunt nasal horn\\r\\nround head\\r\\n\\r\\nAbilities: \\r\\nBump scatter blast\\r\\nImmunity to dragon root\\r\\nCreating Gronckle Iron\\r\\nRechargeable firepower\\r\\nFlying backwards and in all directions\\r\\nHovering and dropping in the air\\r\\n\\r\\nColors: \\r\\nVarious, common ones include:\\r\\ngrey\/brown\\r\\nBlue\\r\\nBeige\\r\\nPurple\\r\\nGreen\\r\\n\\r\\nSize: Medium: 14 feet 9 inches (4.51 meters) long\\r\\n8 feet 7 inches (2.62 meters) tall\\r\\n\\r\\nWeight: 5724 lbs (2596.4 kg) \\r\\n\\r\\nWingspan: \\r\\n18 feet 4 inches (5.6 meters)\\r\\n\\r\\nDiet: \\r\\nRocks\\r\\nFire Weed\\r\\nFish\\r\\nMutton\\r\\nCatastrophic Quaken Eggs\\r\\n\\r\\nHabitat: \\r\\nForests\\r\\nCaves\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/b\/b8\/HTTYD_Gronckle.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Gronckle_(Franchise)"
+        ],
+        [
+            5,
+            "Hotburple",
+            "Boulder",
+            "Features: Eyes lower on head\\r\\nClubbed tail\\r\\n\\r\\nAbilities: Sleep-flying\\r\\nImmense jaw strength that can bite through Dragon Proof Metal\\r\\n\\r\\nColors: Reddish brown\\r\\n\\r\\nSize: \\r\\nMedium: 24 feet 6 inches (7.48 meters) long Click the image\\r\\n8 feet 11 inches (2.72 meters) tall \\r\\n\\r\\nWeight: 5724 lbs (2596.4kg)\\r\\n\\r\\nWingspan: 42 feet 7 inches (12.98 meters) \\r\\n\\r\\nDiet: \\r\\nRocks\\r\\nIron ore\\r\\nFlowers\\r\\nFish\\r\\n\\r\\nHabitat: Caves\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/f\/f1\/1481624586025.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Hotburple"
+        ],
+        [
+            6,
+            "Sentinel",
+            "Boulder",
+            "Features: \\r\\nLarge body covered in tough rock-like epidermal layers and scutes\\r\\nRounded tail\\r\\n\\r\\nAbilities: Wing blasts\\r\\nRemaining motionless for days at a time\\r\\nExtremely developed senses except for sight\\r\\nHibernation\\r\\n\\r\\nColors: Stony grey with mossy green highlights\\r\\n\\r\\nSize: Large: 30 feet (9.14 meters)\\r\\n\\r\\nWeight: 1200 lbs (544.31 kilograms)\\r\\n\\r\\nWingspan: \\r\\n60 feet (18.3 meters)\\r\\n\\r\\nDiet: \\r\\nVanaheim Fruit\\r\\nFish\\r\\n\\r\\nHabitat: Dragon Cemeteries\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/0\/07\/Sentinelaa.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Sentinel"
+        ],
+        [
+            7,
+            "Shovelhelm",
+            "Boulder",
+            "Features: Pointed chin\\r\\nHead frill\\r\\nPaddle-shaped tail\\r\\nStubby arms\\r\\n\\r\\nAbilities: Digging with chin\\r\\nHammering with head\\r\\n\\r\\nColors: \\r\\nChartreuse\\r\\nAquamarine with purple to brown stripes\\r\\n\\r\\nSize: Medium: 30 feet (9.144 meters) long\\r\\n\\r\\nWeight: 3500 pounds (1587.573 kilograms)\\r\\n\\r\\nWingspan: 40 feet (12.19 meters)\\r\\n\\r\\nDiet: \\r\\nRocks\\r\\nFish\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/2\/22\/1481595797181.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Shovelhelm"
+        ],
+        [
+            8,
+            "Snafflefang",
+            "Boulder",
+            "Features: Spiked tail bludgeon\\r\\nNasal horn\\r\\nDiamond-sharp teeth\\r\\n\\r\\nAbilities: UNKNOWN\\r\\n\\r\\nColors: Blue and red;\\r\\nGreen and orange\\r\\n\\r\\nSize: Medium: 30 feet (9.14 meters)\\r\\n\\r\\nWeight: 2,814 pounds \\r\\n\\r\\nWingspan: 40 feet (12.2 meters)\\r\\n\\r\\nDiet: Geodes\\r\\nFish\\r\\n\\r\\nHabitat: UNKOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/f\/f8\/1481596725144.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Snafflefang"
+        ],
+        [
+            9,
+            "Whispering Death",
+            "Boulder",
+            "Features: \\r\\nLarge head and mouth with rotating teeth inside\\r\\nSharp spines\\r\\nWhite bulging eyes\\r\\n\\r\\nAbilities: Tunneling\\r\\nSpine shot\\r\\nRotating teeth\\r\\nVacuum effect\\r\\nImmunity to dragon nip\\r\\n\\r\\nColors: \\r\\nGrayish steel green body with red highlighted spikes\\r\\n\\r\\nSize: Large: 63 feet 10 inches (19.45 meters) long Click the image\\r\\n7 feet 6 inches (2.29 meters) tall \\r\\n\\r\\nWeight: 2000 lbs (907.2 kg)\\r\\n\\r\\nWingspan: 17 feet 10 inches (5.44 meters)\\r\\n\\r\\nDiet: \\r\\nFire Weed\\r\\nFish\\r\\nMutton\\r\\nFlowers\\r\\nYak\\r\\n\\r\\nHabitat: Mountains\\r\\nCaves\\r\\nUnderground tunnels\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/c\/c3\/Sdsd.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Whispering_Death"
+        ],
+        [
+            10,
+            "Screaming Death",
+            "Boulder",
+            "Features: Long snake-like body\\r\\nLarge chomping mouth\\r\\nRows of teeth\\r\\nSmall wings\\r\\nSpiny frills along underbelly\\r\\nRed spikes on head\\r\\nExpandable spiny frill layers on neck\\r\\nRough scales\\r\\n\\r\\nAbilities: \\r\\nSpine shot\\r\\nDisorienting shriek\\r\\nTunneling\\r\\nMultiple rounds of fireballs\\r\\n\\r\\nColors:  Albino white with red highlights\\r\\n\\r\\nSize: Gigantic: 50 feet (15.24 meters)\\r\\n\\r\\nWeight: 2500 lbs (1134 kilograms)\\r\\n\\r\\nWingspan: 10 feet (3.05 meters)\\r\\n\\r\\nDiet: Fireweed\\r\\nFish\\r\\nMutton\\r\\nFlowers\\r\\nYak\\r\\nSheep\\r\\n\\r\\nHabitat: \\r\\nUnderground tunnels\\r\\nCaves\\r\\nMountains\\r\\n\\r\\nTrainable: Unknown",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/2\/27\/Grito_Mortal.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Screaming_Death"
+        ],
+        [
+            11,
+            "Armorwing",
+            "Mystery",
+            "Features: Metal armor\\r\\nPair of twisted horns\\r\\nChain-whip tail\\r\\nLong claws\\r\\nLong spikes on the knees\\r\\n\\r\\nAbilities: \\r\\nMagnetic body\\r\\nWhipping tail\\r\\n\\r\\nColors: Pale green\\r\\nPurple\\r\\nOrange\\r\\n\\r\\nSize: Large: 70 feet (21.3 meters) long\\r\\n\\r\\nWeight: 2400 lbs (1088.6 kilograms)\\r\\n\\r\\nWingspan: \\r\\n80 feet (24.3 meters)\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: Caves\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/9\/98\/Armorwing.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Armorwing"
+        ],
+        [
+            12,
+            "Boneknapper",
+            "Mystery",
+            "Features: Bone armor\\r\\nClubbed tail\\r\\n\\r\\nAbilities: Bone armor\\r\\nThundering roar\\r\\n\\r\\nColors: \\r\\nPale colors with white bones as armor\\r\\n\\r\\nSize: Large\\r\\n\\r\\nArmoured With: Bones\\r\\n\\r\\nWeight: UNKNOWN\\r\\n\\r\\nWingspan: UNKNOWN\\r\\n\\r\\nDiet: Fish\\r\\n\\r\\nHabitat: Dragon Graveyards\\r\\n\\r\\nTrainable: YES",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/7\/70\/Bonenapper-how-to-train-your-dragon.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Boneknapper"
+        ],
+        [
+            13,
+            "Buffalord",
+            "Mystery",
+            "Features: Armored body\\r\\nRam-like horns\\r\\nSmall rows of spines along back\\r\\nShort legs\\r\\n\\r\\nAbilities: \\r\\nInflating its body to an immense size\\r\\nShooting spines from any part of its body\\r\\nExtremely potent saliva\\r\\n\\r\\nColors: \\r\\nBrown and bronze\\r\\nGreen and yellow\\r\\n\\r\\nSize: \\r\\nMedium: 30 feet (9.14 meters) \\r\\n\\r\\nWeight: \\r\\n950 lbs (430.9 kilograms)\\r\\n\\r\\nWingspan: 50 feet (15.2 meters)\\r\\n\\r\\nDiet: \\r\\nFlowers\\r\\nGrass\\r\\nHerbs\\r\\nLichen\\r\\nMoss\\r\\n\\r\\nHabitat: Grassy Plains\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/pm1.aminoapps.com\/7058\/7251cf2231a82436a0e90897f4e79f39b137450er1-1095-617v2_hq.jpg",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Buffalord"
+        ],
+        [
+            14,
+            "Cavern Crasher",
+            "Mystery",
+            "Features: \\r\\nGlands that produce flammable mucus on back and tail\\r\\nCollapsible skeleton\\r\\nUpper beak\\r\\nAbsence of wings\\r\\nFlat and rounded tail\\r\\n\\r\\nAbilities: \\r\\nFitting through small spaces\\r\\nProducing a special flammable mucus from its back\\r\\nBurrowing\\r\\nImmunity to Fireworm's venom\\r\\n\\r\\nColors: Black with yellow stripes\\r\\nBlack with red stripes\\r\\n\\r\\nSize: Large: 60 ft (18.3 meters) long\\r\\n\\r\\nWeight: 1,000 lbs (453.6 kilograms)\\r\\n\\r\\nWingspan: NO WINGS\\r\\n\\r\\nDiet: \\r\\nOther Dragons' Eggs\\r\\nDragon hatchlings\\r\\nFirecomb\\r\\n\\r\\nHabitat: Underground caves\\r\\n\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/eternel\/images\/8\/8e\/Cavern_Crasher.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Cavern_Crasher"
+        ],
+        [
+            15,
+            "Changewing",
+            "Mystery",
+            "Features: Side horns protruding from head\\r\\nAntennae with leaf-like lobes\\r\\nUnderbite\\r\\nNasal horn\\r\\n\\r\\nAbilities: Camouflage\\r\\nPrehensile tail\\r\\nHypnosis\\r\\nImmunity to their own acid\\r\\n\\r\\nColors: Red, with orange at the edge of the wings and a cream underbelly\\r\\nGreen with a cream underbelly\\r\\n\\r\\nSize: Medium: 52 feet 4 inch (15.96 meters) long\\r\\n8 feet 4 inches (2.54 meters) tall\\r\\n\\r\\nWeight: 950 lbs (430.91 kilograms)\\r\\n\\r\\nWingspan: 30 feet (9.14 meters)\\r\\n\\r\\nDiet: \\r\\nFire Weed\\r\\nFish\\r\\nHoneycomb\\r\\nWild Boar\\r\\nSmaller dragons such as the Night Terror\\r\\nLarger and injured dragons like the Scauldron and the Hideous Zippleback\\r\\n\\r\\nHabitat: Temperate forests\\r\\n\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/f\/f5\/Alacambiante.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Changewing"
+        ],
+        [
+            16,
+            "Death Song",
+            "Mystery",
+            "Features: Colorful wings\\r\\nFins on the head\\r\\nLong spines along the back\\r\\nLong horns\\r\\nBarbles\\r\\n\\r\\nAbilities: Siren-like luring song\\r\\nImmunity to eels\\r\\nImmunity to their own siren-like luring songs\\r\\n\\r\\nColors: Striking and bright colors of blue, yellow, and orange\\r\\n\\r\\nSize: Large: 95 feet (28.95 meters) long\\r\\n\\r\\nWeight: 1200 lbs (544.3 kilograms)\\r\\n\\r\\nWingspan: 67 feet (20.42 meters) long\\r\\n\\r\\nDiet: \\r\\nOther dragons\\r\\nEels\\r\\nChickens\\r\\nHumans\\r\\nFruit\\r\\n\\r\\nHabitat: Lush Forests\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/9\/95\/1481796023720.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Death_Song"
+        ],
+        [
+            17,
+            "Dramillion",
+            "Mystery",
+            "Features: Spiky head\\r\\nSmall forelimbs\\r\\nFinned tail\\r\\n\\r\\nAbilities: Mimic fire from other dragons\\r\\nSharing fire reserves\\r\\nCamouflage (Titan Wings only)\\r\\n\\r\\nColors: Dark blue and red\\r\\nRed and blue\\r\\nYellow and purple\\r\\n\\r\\nSize: Medium: 20 ft (6.1 meters) long\\r\\n\\r\\nWeight: 600 lbs (272.2 kilograms)\\r\\n\\r\\nWingspan: 35 feet (10.67 meters)\\r\\n\\r\\nDiet: Berries\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/e\/ed\/Dramillion_Render.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Dramillion"
+        ],
+        [
+            18,
+            "Flightmare",
+            "Mystery",
+            "Features: Wing tendrils\\r\\nSplit tail\\r\\nTranslucent wings\\r\\nBarbells\\r\\nGhostlike glow\\r\\n\\r\\nAbilities: Glows brighter when consuming glowing algae\\r\\nLoud banshee-like scream\\r\\nParalyzing targets with its mist\\r\\n\\r\\nColors: Bioluminescent neon blue with a lighter underbelly\\r\\n\\r\\nSize: Medium: 30 feet (9.14 meters) long\\r\\n\\r\\nWeight: 600 lbs (272.2 kg)\\r\\n\\r\\nWingspan: 50 feet (15.24 meters) \\r\\n\\r\\nDiet: \\r\\nGlowing algae\\r\\nOther algae (SOD)\\r\\nFish (SOD)\\r\\n\\r\\nHabitat: Forests and Wetlands (possibly anywhere as long as it follows the glowing algae filled streams and swamps)\\r\\n\\r\\nTrainable: Uncertain",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/3\/31\/Flightmare_infobox.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Flightmare"
+        ],
+        [
+            19,
+            "Hideous Zippleback",
+            "Mystery",
+            "Features: Two heads\\r\\nHorns\\r\\nSplit tail\\r\\nLobs along necks, back, and tail\\r\\n\\r\\nAbilities: Flaming ouroboros\\r\\nTransmitting brains\\r\\n\\r\\nColors: Different colors, mainly green, blue, or gold with spots and cream underbelly\\r\\n\\r\\nSize: Large: 70 feet 10 inches (21.59 meters) long Click the image\\r\\n8 feet 1 inch (2.46 meters) tall\\r\\n\\r\\nWeight: 6,036 pounds (2737.9 kilograms)\\r\\n\\r\\nWingspan: 47 feet 4 inches (14.43 meters) \\r\\n\\r\\nDiet: \\r\\nFish\\r\\nHam\\r\\nHoneycomb\\r\\n\\r\\nHabitat: \\r\\nCaves\\r\\nForests\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/1\/1a\/BarfBelchRender.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Hideous_Zippleback"
+        ],
+        [
+            20,
+            "Hobgobbler",
+            "Mystery",
+            "Features: Small thin spines on the back\\r\\nSmall curved nasal horn\\r\\n\\r\\nAbilities: Feeding frenzy\\r\\nMultiplying\\r\\nCovering themselves with their own slobber to slip through tight spots\\r\\n\\r\\nColors: Purple with dark spots and yellow underside\\r\\nGreen with dark spots and yellow underside\\r\\n\\r\\nSize: Small: 3 feet (91.44 centimeters) long\\r\\n\\r\\nWeight: 55 pounds (24.976 kilograms)\\r\\n\\r\\nWingspan: 2.5 feet (76.2 centimeters)\\r\\n\\r\\nDiet: \\r\\nHobgobbler Bait\\r\\nSlugs\\r\\nFlowers\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/5\/50\/THW-Hobgobbler-Transparent.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Hobgobbler"
+        ],
+        [
+            21,
+            "Sandbuster",
+            "Mystery",
+            "Features: Large head\\r\\nLong neck\\r\\nPrehensile tail\\r\\nSpikes along side of body\\r\\n\\r\\nAbilities: Burrowing\\r\\nPrehensile Tail\\r\\nFire Ricochet on Impact\\r\\n\\r\\nColors: Green and beige\\r\\n\\r\\nSize: Medium: 80 feet (24.38 meters) long\\r\\n\\r\\nWeight: 1000 lbs (453.6 kilograms)\\r\\n\\r\\nWingspan: 50 feet (15.24 meters) long\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: \\r\\nCaverns\\r\\nBeaches\\r\\n\\r\\nTrainable: UNKNOWN",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/4\/45\/Sandbuster_Transparent.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Sandbuster"
+        ],
+        [
+            22,
+            "Slitherwing",
+            "Mystery",
+            "Features: Long snake-like body\\r\\nIrregular spikes on the head\\r\\nSmall claws on wings\\r\\n\\r\\nAbilities: Spilling poison secreted from the skin\\r\\nExtremely foldable wings\\r\\nImmunity to a Death Song's amber and siren call\\r\\n\\r\\nColors: Red with black and yellow stripes\\r\\n\\r\\nSize: \\r\\nMedium: 40 feet (12.192 meters) long\\r\\n\\r\\nWeight: 1,000 lbs\\r\\n\\r\\nWingspan: 60 feet\\r\\n\\r\\nDiet: Other Dragons\\r\\n\\r\\nHabitat: Caves\\r\\nForests\\r\\n\\r\\nTrainable: UNKNOWN",
+            "https:\/\/static.wikia.nocookie.net\/riseofberk\/images\/d\/d0\/Slitherwing_-_NBG.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Slitherwing"
+        ],
+        [
+            23,
+            "Smothering Smokebreath",
+            "Mystery",
+            "Features: Yellow eyes\\r\\nSkull-like head\\r\\nSmoke-like tail\\r\\nSpines along back\\r\\nNasal horn flanked by two smaller ones\\r\\n\\r\\nAbilities: Creating a veil of smoke\\r\\nCreating nests from metal\\r\\n\\r\\nColors: Dark and light grey\\r\\n\\r\\nSize: Small: 6 feet (1.83 meters) (WoD) Click the image\\r\\n2 feet 5 inches tall (1.6 meters)\\r\\n\\r\\nWeight: 140 lbs (63.5 kg) \\r\\n\\r\\nWingspan: 10 feet (3.05 meters) \\r\\n\\r\\nDiet: Crab\\r\\nFish\\r\\nMutton\\r\\n\\r\\nHabitat: Caves\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/2\/27\/Extingue_Humo.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Smothering_Smokebreath"
+        ],
+        [
+            24,
+            "Snaptrapper",
+            "Mystery",
+            "Features: Four heads\\r\\nLeaf-like spines\\r\\nTriple split jaws\\r\\nAntennae\\r\\nForked tail\\r\\n\\r\\nAbilities: Baits victim with a sweet smell\\r\\nEmitting obnoxious odors\\r\\n\\r\\nColors: Green with red and yellow spots\\r\\n\\r\\nSize: Large: 68 feet (20.73 meters) long (WoD)\\r\\n9 feet 4 7\/8 inches (2.87 meters) tall\\r\\n\\r\\nWeight: 5,800 pounds (2,630.83 kilograms) \\r\\n\\r\\nWingspan: 35 feet (10.668 meters)\\r\\n\\r\\nDiet: Spiders\\r\\nSmall land animals\\r\\n\\r\\nHabitat: Forests\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/e\/ea\/1482442286402.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Snaptrapper"
+        ],
+        [
+            25,
+            "Grim Gnasher",
+            "Sharp",
+            "Features: Snake-like body\\r\\nLots of horns and spikes\\r\\nShark like-teeth\\r\\n\\r\\nAbilities: Regenerating and shooting teeth\\r\\nImmunity to Slitherwing venom\\r\\n\\r\\nColors: Purple\\r\\nRed and purple\\r\\n\\r\\nSize: Medium: 10 feet (3.05 meters) long\\r\\n\\r\\nWeight: 400 lbs (181.4 kilograms)\\r\\n\\r\\nWingspan: 14 feet (4.3 meters)\\r\\n\\r\\nDiet: Sick, elderly, and dying dragons\\r\\nFish (SoD)\\r\\nSlitherwing\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: UNKNOWN",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/f\/fb\/Grimgnasher_Transparent.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Grim_Gnasher"
+        ],
+        [
+            64,
+            "Stormcutter",
+            "Sharp",
+            "Features: Two pairs of wings\\r\\nHead frills\\r\\n\\\"Smashed\\\" face\\r\\nThree tail fins\\r\\nHooked talons\\r\\n\\r\\nAbilities: Exceptional maneuverability and diving\\r\\nFlying sideways\\r\\nTwisting head about 180°\\r\\nFlammable saliva\\r\\n\\r\\nColors: Woody-brown body, cream underbelly and blue highlights\\r\\nBright lilac and white hints on wings and underbelly\\r\\n\\r\\nSize: Large: 80 feet (24.7 meters) long Click the image\\r\\n31 feet 3 1\/4 inches (9.53 meters) tall\\r\\n\\r\\nWeight: 2,500 lbs (1134 kg)\\r\\n\\r\\nWingspan: 111 feet 10 inches (34.09 meters)\\r\\n\\r\\nDiet: Fish\\r\\nPlants\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/e\/eb\/1481742530411.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Stormcutter"
+        ],
+        [
+            65,
+            "Speed Stinger",
+            "Sharp",
+            "Features: Razor-sharp stinger\\r\\nRed stripes (Lead Stinger)\\r\\nSail fin on head\\r\\nSmall pair of wings on back\\r\\nExtendable webbed feet (Archipelago Speed Stingers)\\r\\nTheropod-like stature\\r\\n\\r\\nAbilities: Paralyzing sting\\r\\nIncredible night vision\\r\\nWater running\\r\\n\\r\\nColors: Green\\r\\nRed fins, wings, and stripes (Lead Stinger)\\r\\n\\r\\nSize: Small: 7 feet 1 inch (2.16 meters) tall (DP)\\r\\n16 feet (4.88 meters) long\\r\\n\\r\\nWeight: 600 lbs (272.155 kg)\\r\\n\\r\\nWingspan: WINGLESS DRAGON\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: Caves\\r\\nIcy Regions\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/f\/f0\/Speed_stinger_infobox.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Speed_Stinger"
+        ],
+        [
+            26,
+            "Raincutter",
+            "Sharp",
+            "Features: Large sharp fins on the back and head\\r\\nNasal horn\\r\\nElongated neck\\r\\nShort hooked tendrils under the chin\\r\\nLarger lower jaw\\r\\n\\r\\nAbilities: Aerodynamic fins used for flight and offense\\r\\nPicking up food with its long neck\\r\\n\\r\\nColors: Greyish green and orange with dark red wings\\r\\nBlue and purple back and wings with pink belly\\r\\n\\r\\nSize: Large: 50 feet (15.24 meters) long \\r\\n\\r\\nWeight: 2100 lbs (952.5 kg)\\r\\n\\r\\nWingspan: 60 feet (18.29 meters)\\r\\n\\r\\nDiet: \\r\\nWorms\\r\\nGrubs\\r\\nFish\\r\\n\\r\\nHabitat: Temperate rainforests\\r\\n\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/3\/3b\/HTTYD2-Raincutter-Transparent.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Raincutter"
+        ],
+        [
+            27,
+            "Razorwhip",
+            "Sharp",
+            "Features: Horn on snout\\r\\nSharp spines\\r\\nSpikes on the edge of wings\\r\\nReflective scales\\r\\n\\r\\nAbilities: Sharp and telescopic prehensile tail that can be used as a whip\\r\\nPrecise and easily maneuverable in flight\\r\\nPoisonous tears\\r\\nShooting tail barbs\\r\\nArmor-like Scales\\r\\n\\r\\nColors: Silver\\r\\nMetallic rust\\r\\n\\r\\nSize: Medium: 60 feet (18.288 meters) long\\r\\n\\r\\nWeight: 900 lbs (408.2 kg)\\r\\n\\r\\nWingspan: 48 feet (14.63 meters) \\r\\n\\r\\nDiet: Sea Slugs\\r\\nFish\\r\\nBaby Razorwhips (only the males)\\r\\nFlowers (babies only)\\r\\n\\r\\nHabitat: Forests\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/5\/53\/Sisalladura.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Razorwhip"
+        ],
+        [
+            28,
+            "Scuttleclaw",
+            "Sharp",
+            "Features: \\r\\nZippleback-like lobs along back\\r\\nNadder-based structure\\r\\nRound head\\r\\n\\r\\nAbilities: Powerful bite\\r\\nFlammable drool\\r\\n\\r\\nColors: Varies; common colors include:\\r\\nPurple and blue\\r\\nLime green and yellow\\r\\nBlue and orange\\r\\n\\r\\nSize: Medium: 20 feet 2 inches (6.15 meters) long Click the image\\r\\n5 feet 3 inches (1.62 meters) tall\\r\\n\\r\\nWeight: 600 lbs (272.2 kg)\\r\\n\\r\\nWingspan: 19 feet 7 inches (5.98 meters)\\r\\n\\r\\nDiet: Fish\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/a\/a0\/Clavagarras.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Scuttleclaw"
+        ],
+        [
+            29,
+            "Thornridge",
+            "Sharp",
+            "Features: Thorn-like spikes on the head frill\\r\\nDouble nasal horn\\r\\nLong neck with short thorns\\r\\n\\r\\nAbilities: UNKNOWN\\r\\n\\r\\nColors: Orange with green and yellow patterns and red horns\\r\\nBlue with red patterns\\r\\n\\r\\nSize: Large\\r\\n\\r\\nWeight: UNKNOWN\\r\\n\\r\\nWingspan: UNKNOWN\\r\\n\\r\\nDiet: Fish\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/3\/36\/Thornridge_-_NBG.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Thornridge"
+        ],
+        [
+            30,
+            "Timberjack",
+            "Sharp",
+            "Features: Huge razor-sharp wings\\r\\nNo legs\\r\\nLong and twisted horns\\r\\nSlender body and neck\\r\\nTendrils under the chin\\r\\n\\r\\nAbilities: Wing slice\\r\\nFire nova attack\\r\\nUsing its massive wings as shields\\r\\n\\r\\nColors: Woody-brown with lighter underbelly\\r\\n\\r\\nSize: Large: 171 feet 6 inches (52.29 meters) long Click the image\\r\\n11 feet 7 inches (3.55 meters) tall\\r\\n\\r\\nWeight: 900 lbs (408.2 kg)\\r\\n\\r\\nWingspan: 315 feet 6 inches (96.18 meters)\\r\\n\\r\\nDiet: Fish\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/7\/71\/Timber.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Timberjack"
+        ],
+        [
+            31,
+            "Windstriker",
+            "Sharp",
+            "Features: Long sharp horn on snout and chin\\r\\nLong neck\\r\\nSpines along the neck\\r\\nSpots on body\\r\\n\\r\\nAbilities: Skydiving\\r\\n\\r\\nColors: Blue with yellow pattern\\r\\nGray with red pattern\\r\\n\\r\\nSize: Large\\r\\n\\r\\nWeight: UNKNOWN\\r\\n\\r\\nWingspan: UNKNOWN\\r\\n\\r\\nDiet: Fish\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/0\/0d\/Windstriker_-_NBG.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Windstriker"
+        ],
+        [
+            32,
+            "Fireworm",
+            "Stoker",
+            "Features: Four or five pair of legs\\r\\nGlowing body\\r\\nLong twisted horns for the Queen\\r\\n\\r\\nAbilities: White-hot skin\\r\\nQueens have venom to reignite the flame of other Stoker Class dragons\\r\\n\\r\\nColors: Golden brown body and tan spots, horns, and underbelly\\r\\n\\r\\nSize: Average: 2 inches (5 centimeters) long (WoD) Click the image\\r\\nQueen: 89 feet (27.1 meters) long (TUGttD)\\r\\nPlain Fireworm Queen: 80 to 90 feet (24.4 to 27.4 meters) long\\r\\n\\r\\nWeight: Average: 12 ounces (340.19 grams) (WoD)\\r\\nQueen: 6125 pounds (2778.25 kilograms) (TUGttD)\\r\\nPlain Fireworm Queen: 6000 to 8000 pounds (2721.55 to 3628.74 kilograms)\\r\\n\\r\\nWingspan: Average: 1\/2 inch (1.25 centimetres) \\r\\n \\r\\nDiet: Honeycombs\\r\\n\\r\\nHabitat: Caves\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/2\/23\/Fireworm_Queen_0.5.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Fireworm_(Species)"
+        ],
+        [
+            33,
+            "Hobblegrunt",
+            "Stoker",
+            "Features: Large head frill\\r\\nTail fin\\r\\nUnderbite\\r\\n\\r\\nAbilities: Color changing skin based on mood\\r\\nDetecting frill\\r\\nAltering other dragons' mood by changing its color\\r\\nPredicting the future\\r\\n\\r\\nColors: Changes colors depending on its mood:\\r\\nPurple: Curious\\r\\nYellow: Happy\\r\\nRed: Angry\\r\\n\\r\\nSize: Large: 55 feet (16.76 meters) long (WoD)\\r\\n9 feet (2.74 meters) tall\\r\\n\\r\\nWeight: 4,459 pounds (2024.4 kg)\\r\\n\\r\\nWingspan: 63 feet (19.2 meters) wingspan\\r\\n\\r\\nDiet: Fished\\r\\n\\r\\nHabitat: Caverns\\r\\nForests\\r\\nLocations with ample foliage or cover\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/5\/5e\/1481251229305.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Hobblegrunt"
+        ],
+        [
+            34,
+            "Large Shadow Wing",
+            "Stoker",
+            "Features: Triangular spines along back\\r\\nFour spines on tail tip\\r\\nRounded head and snout\\r\\n\\r\\nAbilities: Summoning Small Shadow Wings to attach onto its wings and become its artillery guns\\r\\n\\r\\nColors: Green with white underbelly\\r\\n\\r\\nSize: Large: 40 feet (12.19 meters) long\\r\\n\\r\\nWeight: 1,600 pounds (725.75 kg)\\r\\n\\r\\nWingspan: 60 feet (18.29 meters) \\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/5\/5a\/ShadowWing456.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Large_Shadow_Wing"
+        ],
+        [
+            35,
+            "Monstrous Nightmare",
+            "Stoker",
+            "Features: Double-clawed wings\\r\\nTwo pairs of long horns\\r\\nSharp spines\\r\\nSnake-like neck\\r\\nSnake-like tail with frills\\r\\nBarbels\\r\\nNasal horn\\r\\nFlammable gel on skin\\r\\n\\r\\nAbilities: Self-immolation\\r\\nWing blast\\r\\nJaw expansion\\r\\nCreating Monstrous Nightmare Gel\\r\\n\\r\\nColors: Various colors, common ones include:\\r\\nRed\\r\\npink\/yellow\\r\\ngreen\\r\\n\\r\\nSize: Large: 64 feet 1 inch (19.53 meters) Click the image\\r\\n15 feet 10 inches (4.85 meters) tall\\r\\n\\r\\nWeight: 5,040 lbs (2290.91 kg)\\r\\n\\r\\nWingspan: 72 feet (21.94 meters)\\r\\n\\r\\nDiet: \\r\\nApple\\r\\nCorn\\r\\nCrab\\r\\nFish\\r\\nMutton\\r\\nRat\\r\\nWild Boar\\r\\nYak\\r\\n\\r\\nHabitat: Forests\\r\\nCaves\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/5\/56\/1481529221423.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Monstrous_Nightmare_(Franchise)"
+        ],
+        [
+            36,
+            "Night Terror",
+            "Stoker",
+            "Features:  Double nasal horn\\r\\nHorn under chin\\r\\nShort fattish tail with four or more short, thin spikes on it\\r\\n\\r\\nAbilities: Creates massive flocks to appear as a larger dragon to scare off predators\\r\\n\\r\\nColors: Black and dark green (the normal variety)\\r\\nWhite and grey (Smidvarg, Night Swarms)\\r\\nRed and orange (Fire Terrors)\\r\\n\\r\\nSize: Small: 3 feet (0.91 meters) long\\r\\n\\r\\nWeight: 14 pounds (6.35 kilograms)\\r\\n\\r\\nWingspan: 5 feet (1.52 meters)\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: Forests\\r\\nCaves\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/d\/d6\/Nightterror_infobox.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Night_Terror"
+        ],
+        [
+            37,
+            "Red Death",
+            "Stoker",
+            "Features: Clubbed tail\\r\\nThree pairs of eyes\\r\\nMassive size\\r\\nHead frill\\r\\nBumps and warts all over body\\r\\n\\r\\nAbilities: Emits homing signal to control other dragons\\r\\nMagma-proof skin\\r\\nVacuum mouth\\r\\n\\r\\nColors: Wedgwood blue with red spikes and peach belly\\r\\n\\r\\nSize: Gigantic: 400 feet (121.92 meters) long (AoHtTYD)\\r\\n99 feet (30.18 meters) tall\\r\\n\\r\\nWeight: 22,000 pounds (10 tons)\\r\\n\\r\\nWingspan: 550 feet (167.64 meters)\\r\\n\\r\\nDiet: Animals provided by its subordinates\\r\\nOther dragons\\r\\n\\r\\nHabitat: Volcanoes\\r\\n\\r\\nTrainable: UNKNOWN",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/e\/e4\/Red_Death_flying_%28transparent%29.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Red_Death"
+        ],
+        [
+            38,
+            "Singetail",
+            "Stoker",
+            "Features: Two sets of wings\\r\\nGills\\r\\nArticulated eyes\\r\\nFlat body\\r\\nThree rows of spines along back\\r\\n\\r\\nAbilities: Eye Movement\\r\\nEmitting fire from different body parts\\r\\nImmunity to Sagefruit\\r\\n\\r\\nColors: Orange with red spots and purple chin\\r\\nGreen with brown spots\\r\\nYellow with red spots\\r\\nRed with purple spots\\r\\n\\r\\nSize:  Medium: 150 feet (45.72 meters) \\r\\n\\r\\nWeight: 1800 lbs (816.4 kilograms)\\r\\n\\r\\nWingspan: 300 feet (91.44 meters)\\r\\n\\r\\nDiet: Ice Tail Pike\\r\\nYak\\r\\n\\r\\nHabitat: Non-volcanic regions\\r\\n\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/3\/32\/Imagen1gh.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Singetail"
+        ],
+        [
+            39,
+            "Small Shadow King",
+            "Stoker",
+            "Features: Row of triangular spines along the back\\r\\nFour spines on tail tip\\r\\nRounded head and snout\\r\\n\\r\\nAbilities: Dive-bombing\\r\\n\\r\\nColors: Blue and purple\\r\\n\\r\\nSize: Medium: 3 feet (0.91 meters)\\r\\n\\r\\nWeight: 14 pounds (6.35 kg)\\r\\n\\r\\nWingspan: 5 feet (1.5 meters)\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: UNKNOWN",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/2\/21\/Small_Shadow_Render.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Small_Shadow_Wing"
+        ],
+        [
+            40,
+            "Terrible Terror",
+            "Stoker",
+            "Features: \\r\\nArrow-shaped tail tip\\r\\nSmall spines\\r\\nSmall horns\\r\\nLarge yellow eyes\\r\\n\\r\\nAbilities: Amazing accuracy\\r\\nSinging\\r\\n\\r\\nColors: Varies (Body color with highlights on back and pale belly)\\r\\n\\r\\nSize: Small: 5 feet 11 inches (1.81 meters) long (AoHtTYD)\\r\\n1 foot 5 inches (0.43 meters) tall\\r\\n\\r\\nWeight: \\r\\n20 lbs (9.09 kg)\\r\\n\\r\\nWingspan: \\r\\n6 feet 2 inches (1.89 meters) \\r\\n\\r\\nDiet: \\r\\nFish\\r\\nBread\\r\\nChicken\\r\\n\\r\\nHabitat: \\r\\nNearly all land habitats known\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/2\/2c\/1481530669268.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Terrible_Terror"
+        ],
+        [
+            41,
+            "Threadtail",
+            "Stoker",
+            "Features: Large crown-like head frill\\r\\nBumpy skin\\r\\n\\r\\nAbilities: Poisonous skin\\r\\n\\r\\nColors: Bright yellow with pale blue\\r\\nBright pink and purple\\r\\nDeep blue with bright green\\r\\n\\r\\nSize: Large: 40 feet (12.19 meters) long\\r\\n\\r\\nWeight: 1900 pounds (861.82 kilograms)\\r\\n\\r\\nWingspan: 51 feet (15.54 meters)\\r\\n\\r\\nDiet: Fish\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/b\/bd\/Threadtail_-_NBG.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Threadtail"
+        ],
+        [
+            42,
+            "Typhoomerang",
+            "Stoker",
+            "Features: Large wings\\r\\nPair of smooth horns\\r\\nSpines along the back\\r\\nLong razor sharp talons\\r\\n\\r\\nAbilities: Flaming cyclone\\r\\nFlaming corkscrew lunge\\r\\nImmunity of the Eel Pox\\r\\nSparkle Shower\\r\\nPromoting flower growth after a cyclone\\r\\nEating eels to increase shot limit\\r\\n\\r\\nColors: Different colors include:\\r\\nRed\\r\\nGreenish blue\\r\\nOrange\\r\\nYellow with white highlights red with white highlights\\r\\n\\r\\nSize: 35 feet (10.67 meters)\\r\\n\\r\\nWeight: 950 lbs (430.91 kg)\\r\\n\\r\\nWingspan: 50 feet (15.24 meters)\\r\\n\\r\\nDiet: Eels\\r\\nFish\\r\\nHoneycomb\\r\\n\\r\\nHabitat: Forests\\r\\nIslands with shores abundant with eels\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/9\/95\/1481264040302.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Typhoomerang"
+        ],
+        [
+            43,
+            "Deathgripper",
+            "Strike",
+            "Features: Protruding retractable tusks\\r\\nPlate armor along the back\\r\\nVenomous stinger sheathed at the tip of the telescopic tail\\r\\nJagged pincers\\r\\n\\r\\nAbilities: Sedative sting\\r\\nVenomous teeth\\r\\n\\r\\nColors: Red and black\\r\\nYellow and black\\r\\nPurple and black\\r\\nBlue and Purple\\r\\nBlue\\r\\nGreen\\r\\n\\r\\nSize: Medium: 28 feet (8.5344 meters) long\\r\\n\\r\\nWeight: 2,100 lbs (952.544 kilograms)\\r\\n\\r\\nWingspan: 32 feet (9.7536 meters)\\r\\n\\r\\nDiet: \\r\\nFish (SOD)\\r\\nOther dragons\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/d\/d1\/Deathgripper-Transparent.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Deathgripper"
+        ],
+        [
+            44,
+            "Light Fury",
+            "Strike",
+            "Features: Cat-like eyes\\r\\nLong, thin ridge running down the spine\\r\\nTriangular tail flukes\\r\\nFour small nubs on the head\\r\\nLong, thin ridge on legs\\r\\n\\r\\nAbilities: Cloaking via plasma blasts\\r\\nCamouflage\\r\\nStealth flight\\r\\nReflective scales\\r\\nRetractable teeth\\r\\nDive-bombing\\r\\n\\r\\nColors: White with a blue and pink tint\\r\\n\\r\\nSize: Medium: 22 ft (6.7 meters) long\\r\\n\\r\\nWeight: 1,600 lbs (725.74 kg)\\r\\n\\r\\nWingspan: 42 feet (12.8 meters)\\r\\n\\r\\nDiet: Fish\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/d\/d8\/THW-Unnamed_Light_Fury-Transparent.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Light_Fury"
+        ],
+        [
+            45,
+            "Night Fury",
+            "Strike",
+            "Features: Cat-like eyes\\r\\nEar-like appendages\\r\\nNubs and tendrils protruding from head\\r\\nFins behind the hind legs\\r\\nTail fins\\r\\n\\r\\nAbilities: Dive-bombing\\r\\nRetractable teeth\\r\\nEcholocation\\r\\nSplitting spines for better maneuverability\\r\\nBlending in with the night sky\\r\\nCloaking with electricity\\r\\n\\r\\nColors: Jet black with slightly lighter spots\\r\\n\\r\\nSize: Medium: 28 feet 8 inches (8.74 meters) long Click the image\\r\\n5 feet 9 inches (1.75 meters) tall\\r\\n\\r\\nWeight: 1,776 lbs (805.6 kg)\\r\\n\\r\\nWingspan: 50 feet 3 inches (15.33 meters)\\r\\n\\r\\nDiet: Beef\\r\\nCrab\\r\\nFish\\r\\nHoneycomb\\r\\nApple\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/2\/2e\/NF.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Night_Fury"
+        ],
+        [
+            46,
+            "Skrill",
+            "Strike",
+            "Features: Sharp metallic spines on the back\\r\\nLong wing claws\\r\\nSpiked crown on the head\\r\\nBeard-like spikes under the chin\\r\\n\\r\\nAbilities: Electrokinesis\\r\\nIce hibernation\\r\\nBlending in with dark clouds\\r\\nRiding lightning bolts to achieve supersonic speeds\\r\\nSinging\\r\\nConsumption and Immunity to Electric Eels\\r\\n\\r\\nColors: Dark gray with purple markings and lighter belly\\r\\nLight purple with grey markings and white underbelly\\r\\nDark blue with light blue markings and lighter blue underbelly\\r\\nBlack with purple markings and white underbelly\\r\\nGrey with blue markings and blue underbelly\\r\\n\\r\\nSize: Medium: 22 feet (6.7 meters) long (WoD)\\r\\n6 feet (1.84 meters) tall\\r\\n\\r\\nWeight: 1,800 lbs (816.47 kg)\\r\\n\\r\\nWingspan: 40 feet (12.19 meters)\\r\\n\\r\\nDiet: \\r\\nMutton\\r\\nElectric Eel\\r\\nFish\\r\\nSingetail\\r\\n\\r\\nHabitat: Mountains\\r\\nForests\\r\\nCold Regions\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/b\/b2\/Sfsdfsf.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Skrill"
+        ],
+        [
+            47,
+            "Songwing",
+            "Strike",
+            "Features: Huge wings\\r\\nLarge claws\\r\\nLong spines along the back\\r\\nSmall body\\r\\nLong, slender tail\\r\\n\\r\\nAbilities: UNKNOWN\\r\\n\\r\\nColors: Shades of Green, Orange, Scarlet and Brown with Darker Stripes and White Spots\\r\\n\\r\\nSize:  Large\\r\\n\\r\\nWeight: UNKNOWN\\r\\n\\r\\nWingspan: UNKNOWN\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Uncertain",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/e\/ed\/Songwing_concept.jpg",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Songwing"
+        ],
+        [
+            48,
+            "Snow Wraith",
+            "Strike",
+            "Features: Long ledge under chin\\r\\nSpikes on tail\\r\\nBumpy tongue\\r\\nPair of large tusks\\r\\nLong eyebrow-like appendages\\r\\n\\r\\nAbilities: Thermal vision\\r\\nAdapted to blizzards\\r\\nBlending in with the snow\\r\\nGripping sharp claws and tail spikes on ice\\r\\nBurrowing through ice\\r\\n\\r\\nColors: Snowy white with blue highlights\\r\\n\\r\\nSize: Medium: 30 feet (9.14 meters) long\\r\\n\\r\\nWeight: 900 lbs (408.2kg)\\r\\n\\r\\nWingspan: 48 feet (14.63 meters)\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: Arctic regions\\r\\nIce Realm of the Hidden World\\r\\n\\r\\nTrainable: No",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/1\/13\/1481265150027.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Snow_Wraith"
+        ],
+        [
+            49,
+            "Triple Stryke",
+            "Strike",
+            "Features: Three tails that tie together to form one\\r\\nTwo ear-like appendages on head\\r\\nLarge pincers as forearms\\r\\n\\r\\nAbilities: Unique venom in each stinger\\r\\nDefense roll\\r\\nDefensive plates\\r\\nPrehensile tail\\r\\n\\r\\nColors: Brownish-black with orange stripes and a yellow underbelly\\r\\n\\r\\nSize: Medium: 30ft (9.1 meters) long\\r\\n\\r\\nWeight: 900 lbs (408.5 kilograms)\\r\\n\\r\\nWingspan: 48 feet (14.63 meters)\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: Forests\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/2\/2d\/Triple_Ataque.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Triple_Stryke"
+        ],
+        [
+            50,
+            "Bewilderbeast",
+            "Tidal",
+            "Features: Large spikes protruding from back of neck\\r\\nSmall teeth compared to body ratio\\r\\nCoral-like scales\\r\\nTail fins\\r\\n\\r\\nAbilities: Mind controlling dragons\\r\\nCreating dragon nests out of their self-generated ice\\r\\nUnderwater adaptations\\r\\n\\r\\nColors: Snowy white with charcoal highlighted tips\\r\\nDark, muddy gray with red highlighted tips\\r\\n\\r\\nSize: Gigantic: 647 feet 11 inches (197.49 meters) long Click the image\\r\\n160 feet 5 1\/2 inches (48.9 meters) tall\\r\\n\\r\\nWeight: 200,000 lbs (90,718.5 kilograms)\\r\\n\\r\\nWingspan: 274 feet 3 inches (83.61 meters)\\r\\n\\r\\nDiet: Fish\\r\\n\\r\\nHabitat: Oceans\\r\\nIce nests\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/1\/13\/Bewilderbeast_-_NBG.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Bewilderbeast"
+        ],
+        [
+            52,
+            "Scauldron",
+            "Tidal",
+            "Features: Long neck\\r\\nElastic lower jaw cavity\\r\\nFan-like tailfin\\r\\nNasal horn\\r\\nLong whisker-like tendrils\\r\\nHuge stomach for storage\\r\\nSmall feet with long claws\\r\\n\\r\\nAbilities: Venomous Teeth\\r\\nImmunity to the Blue Oleander\\r\\nElectroreception\\r\\n\\r\\nColors: Sea Green\\r\\nYellow\\r\\nOrange\\r\\nRed\\r\\n\\r\\nSize: Large: 102 feet 8 inch (31.29 meters) long (WS)\\r\\n28 feet 2 inches (8.59 meters) tall\\r\\n\\r\\nWeight: 3,000 lbs (1360.8 kg)\\r\\n\\r\\nWingspan: 104 feet 4 inch (31.8 meters)\\r\\n\\r\\nDiet: \\r\\nBlue Oleander\\r\\nCrab\\r\\nFish\\r\\nSmaller Tidal Class dragons such as the Seashocker and Sliquifier\\r\\n\\r\\nHabitat: Oceans\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/riseofberk\/images\/b\/b3\/Scauldron_-_NBG.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Scauldron"
+        ],
+        [
+            53,
+            "Seashocker",
+            "Tidal",
+            "Features: Two heads\\r\\nTwo fins\\r\\nSharp dorsal blades\\r\\nPointed snout\\r\\nSerrated jaws\\r\\nCurved wings\\r\\n\\r\\nAbilities: Cutting ice with its dorsal blades\\r\\nEcholocation\\r\\nBioluminescence\\r\\nElectrokinesis\\r\\n\\r\\nColors: Sea blue and black\\r\\nTeal and black\\r\\n\\r\\nSize: Medium: 80 feet 2 inches (24.44 meters) long Click the image\\r\\n17 feet 10 3\/8 inches (5.44 meters) tall\\r\\n\\r\\nWeight: 2,200 lbs (1,000 kg)\\r\\n\\r\\nWingspan: 61 feet 6 inches (18.75 meters)\\r\\n\\r\\nDiet: Deep-sea fish\\r\\nHumans\\r\\nOther dragon eggs\\r\\n\\r\\nHabitat: Oceans\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/a\/a5\/Capture_17.PNG",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Seashocker"
+        ],
+        [
+            54,
+            "Shellfire",
+            "Tidal",
+            "Features: Long but proportionately small wings\\r\\nLong horns\\r\\nNasal horn\\r\\nHard carapace-like armor\\r\\n\\r\\nAbilities: Expelling red algae from gills\\r\\nSwimming in great depths\\r\\n\\r\\nColors: Red with orange and yellow\\r\\n\\r\\nSize: Gigantic: 160 feet (48.77 meters) long\\r\\n\\r\\nWeight: 7600 pounds (3.4 tons)\\r\\n\\r\\nWingspan: 190 feet (57.91 meters)\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: Oceans\\r\\n\\r\\nTrainable: UNKNOWN",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/2\/29\/ShellFire_Render.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Shellfire"
+        ],
+        [
+            55,
+            "Sliquifier",
+            "Tidal",
+            "Features: Fin-like wings\\r\\nTendrils under chin\\r\\nFin along neck\\r\\nFin-like tail fins\\r\\n\\r\\nAbilities: Supersonic swimming speed\\r\\n\\r\\nColors: Sea green and bright purple\\r\\n\\r\\nSize: Medium\\r\\n\\r\\nWeight: UNKNOWN\\r\\n\\r\\nWingspan: UNKNOWN\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: Oceans\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/c\/c5\/Sliquifier_Transparent.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Sliquifier"
+        ],
+        [
+            56,
+            "Submaripper",
+            "Tidal",
+            "Features: Webbed feet\\r\\nProtrusions on the back\\r\\nLong, sharp teeth\\r\\nLarge head-to-body ratio\\r\\n\\r\\nAbilities: Creating whirlpools and tidal waves\\r\\nGas bubbles\\r\\n\\r\\nColors: Blue with yellow stripes\\r\\nTurquoise with green stripes\\r\\n\\r\\nSize: Gigantic: 50 ft (15.24 meters)\\r\\n\\r\\nWeight: 3600 lbs (1632.9 kilograms)\\r\\n\\r\\nWingspan: 70 ft (21.34 meters)\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: Oceans\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/9\/96\/Submaripper_Render.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Submaripper"
+        ],
+        [
+            57,
+            "Thunderdrum",
+            "Tidal",
+            "Features: Expandable mouth\\r\\nSmall legs\\r\\nTwo pairs of wings\\r\\nNasal horn\\r\\nSpines\\r\\n\\r\\nAbilities: Expelling air from body to swim\\r\\nBeing nearly deaf makes it immune to the Death Song's call\\r\\n\\r\\nColors: Mainly blue\\r\\nPurple\\r\\nGreen\\r\\nAll with a white belly\\r\\n\\r\\nSize: Large: 130 feet (39.62 meters) long Click the image\\r\\n21 feet 5 inches (6.54 meters) tall\\r\\n\\r\\nWeight: 900 lbs (408.2 kilograms)\\r\\n\\r\\nWingspan: 102 feet 6 inches (31.24 meters)\\r\\n\\r\\nDiet: Fish\\r\\nCrab\\r\\n\\r\\nHabitat: Oceans\\r\\nSea caves\\r\\nDark tide pools\\r\\nIce fields\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/3\/3a\/Thunder-drum-how-to-train-your-dragon.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Thunderdrum"
+        ],
+        [
+            58,
+            "Deadly Nadder",
+            "Tracker",
+            "Features: \\r\\nNasal horn\\r\\nSpiky crown\\r\\nSpiny tail\\r\\nBeak-like upper jaw\\r\\nOverbite\\r\\n\\r\\nAbilities: Spine shot\\r\\nIncredible sense of smell\\r\\nEnhanced speed\\r\\nPrehensile tail\\r\\n\\r\\nColors: Variety of colors, commonly purple or blue\\r\\n\\r\\nSize: Medium: 32 feet 6 inches (9.91 meters) long Click the image\\r\\n11 feet 6 inches (3.52 meters) tall\\r\\n\\r\\nWeight: \\r\\n2628 lbs (1192 kg)\\r\\n\\r\\nWingspan: \\r\\n53 feet 11 inches (16.44 meters)\\r\\n\\r\\nDiet: \\r\\nChicken\\r\\nFish\\r\\nMutton\\r\\nPlants\\r\\nYak\\r\\n\\r\\nHabitat: Forests\\r\\nCaves\\r\\nMountains\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/d\/dd\/NADDER.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Deadly_Nadder_(Franchise)"
+        ],
+        [
+            59,
+            "Rumblehorn",
+            "Tracker",
+            "Features: Clubbed tail\\r\\nJackhammer-like maw\\r\\nArmored neck\\r\\nLong horns on the head\\r\\nSmall spines on the back and tail\\r\\n\\r\\nAbilities: Tracking\\r\\nDisaster detecting\\r\\nHead ramming\\r\\n\\r\\nColors: Green with brown and red\\r\\nPurple with green and blue\\r\\nBlue with turquoise and red\\r\\n\\r\\nSize: \\r\\nMedium: 54 feet (16.48 meters) long Click the image\\r\\n11 feet 1\/2 inch (3.35 meters) tall\\r\\n\\r\\nWeight: 1,100 pounds (495 kilograms)\\r\\n\\r\\nWingspan: 82 feet 3 inches (25.08 meters)\\r\\n\\r\\nDiet: \\r\\nFish\\r\\nChicken\\r\\n\\r\\nHabitat: Forests\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/d\/df\/1481798442360.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Rumblehorn"
+        ],
+        [
+            60,
+            "Snifflehunch",
+            "Tracker",
+            "Features: \\r\\nColorful exterior\\r\\nLong ledge under chin and on nose\\r\\nLobs along back\\r\\nDistinct hump\\r\\n\\r\\nAbilities: Sniffing out friends and foes\\r\\n\\r\\nColors: Different colored patterns\\r\\nRanging in yellow, orange, blue, and green\\r\\n\\r\\nSize: Medium\\r\\n\\r\\nWeight: UNKNOWN\\r\\n\\r\\nWingspan: UNKNOWN\\r\\n\\r\\nDiet: Fish\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/d\/da\/1481799170734.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Snifflehunch"
+        ],
+        [
+            61,
+            "Thunderclaw",
+            "Tracker",
+            "Features: Sail on back\\r\\nRounded nasal horn\\r\\nRounded ledge under chin\\r\\n\\r\\nAbilities: Tracking\\r\\nStampeding\\r\\n\\r\\nColors: Wide variety of colors\\r\\n\\r\\nSize: Medium: 18 feet (5.49 meters)\\r\\n\\r\\nWeight: 1,255 pounds(569kg)\\r\\n\\r\\nWingspan: 14 feet (4.23 meters)\\r\\n\\r\\nDiet: \\r\\nFish\\r\\nSagefruit\\r\\nPie\\r\\n\\r\\nHabitat: \\r\\nForests\\r\\nOpen plains\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/9\/90\/Thunderclaw_Transparent.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Thunderclaw"
+        ],
+        [
+            62,
+            "Windgnasher",
+            "Tracker",
+            "Features: Bumps all over body\\r\\nCrowned head\\r\\nMace-like tail bludgeon\\r\\nHumped back\\r\\n\\r\\nAbilities: Tracking\\r\\n\\r\\nColors: Lime green and dark green\\r\\nOrange and brown\\r\\nBlue and light blue\\r\\n\\r\\nSize: Medium: 25 feet (7.62 meters) long\\r\\n\\r\\nWeight: 2000 lbs (907.184 kilograms)\\r\\n\\r\\nWingspan: 30 feet (17.983 meters)\\r\\n\\r\\nDiet: \\r\\nBarley\\r\\nCinnabar\\r\\nFish\\r\\n\\r\\nHabitat: Icy Regions\\r\\n\\r\\nTrainable: Yes",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/f\/f7\/1481799725112.png",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Windgnasher"
+        ],
+        [
+            63,
+            "Lycanwing",
+            "Unknown",
+            "Features: UNKNOWN\\r\\n\\r\\nAbilities: Infectious bite\\r\\n\\r\\nColors: Red scales with black eyes\\r\\n\\r\\nSize: UNKNOWN\\r\\n\\r\\nWeight: UNKNOWN\\r\\n\\r\\nWingspan: UNKNOWN\\r\\n\\r\\nDiet: UNKNOWN\\r\\n\\r\\nHabitat: UNKNOWN\\r\\n\\r\\nTrainable: UNKNOWN",
+            "https:\/\/static.wikia.nocookie.net\/howtotrainyourdragon\/images\/f\/f3\/IMG_1543.PNG",
+            "https:\/\/howtotrainyourdragon.fandom.com\/wiki\/Lycanwing"
+        ]        
+    ]
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Details</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+    
+        body {
+            font-family: 'IM Fell English', serif;
+            background: url('parchment-texture.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 250, 240, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+    
+        .dragon-card {
+            padding: 20px;
+        }
+    
+        .dragon-card img {
+            max-width: 100%;
+            border-radius: 12px;
+            border: 3px solid #a67c52;
+        }
+    
+        .dragon-card h2 {
+            color: #8B0000;
+            margin-top: 10px;
+            font-size: 28px;
+        }
+    
+        .dragon-card p {
+            color: #333;
+            font-size: 18px;
+        }
+    
+        .details-section {
+            text-align: left;
+            margin-top: 20px;
+        }
+    
+        .details-section h3 {
+            color: #8B0000;
+            border-bottom: 2px solid #8B0000;
+            padding-bottom: 5px;
+        }
+    
+        .details-section ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+    
+        .details-section li {
+            margin-bottom: 5px;
+        }
+    
+        .button-container {
+            margin-top: 20px;
+        }
+    
+        .back-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #8B0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: 0.3s ease-in-out;
+        }
+    
+        .back-button:hover {
+            background-color: #600000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="dragonDetails">
+        <!-- Dragon details will be dynamically inserted here -->
+    </div>
+
+    <script>
+        // Fetch the ID from the URL query string
+        const urlParams = new URLSearchParams(window.location.search);
+        const dragonId = urlParams.get('id');  // Get the ID from the URL
+
+        // Fetch the dragons data
+        fetch('dragons.json')
+            .then(response => response.json())
+            .then(data => {
+                // Find the dragon with the matching ID
+                const dragon = data.rows.find(d => d[0] === parseInt(dragonId));
+
+                if (dragon) {
+                    const dragonDetailsContainer = document.getElementById('dragonDetails');
+                    const dragonName = dragon[1];
+                    const dragonClass = dragon[2];
+                    let features = dragon[3]; // Features & abilities
+                    const imageUrl = dragon[4]; // Image URL
+                    const fandomLink = dragon[5]; // Fandom Link
+
+                    // Split the features string into categories using double line breaks (\\r\\n\\r\\n)
+                    const featureSections = features.split("\\r\\n\\r\\n");
+
+                    // Separate each section by its corresponding title
+                    const featureData = {
+                        features: '',
+                        abilities: '',
+                        colors: '',
+                        size: '',
+                        weight: '',
+                        wingspan: '',
+                        trainable: '',
+                        habitat: ''
+                    };
+
+                    // Assign each section to its correct category
+                    featureSections.forEach(section => {
+                        if (section.includes("Features:")) {
+                            featureData.features = section.replace("Features:", "").trim().replace(/\\r\\n/g, '<br>');
+                        } else if (section.includes("Abilities:")) {
+                            featureData.abilities = section.replace("Abilities:", "").trim().replace(/\\r\\n/g, '<br>');
+                        } else if (section.includes("Colors:")) {
+                            featureData.colors = section.replace("Colors:", "").trim().replace(/\\r\\n/g, '<br>');
+                        } else if (section.includes("Size:")) {
+                            featureData.size = section.replace("Size:", "").trim().replace(/\\r\\n/g, '<br>');
+                        } else if (section.includes("Weight:")) {
+                            featureData.weight = section.replace("Weight:", "").trim().replace(/\\r\\n/g, '<br>');
+                        } else if (section.includes("Wingspan:")) {
+                            featureData.wingspan = section.replace("Wingspan:", "").trim().replace(/\\r\\n/g, '<br>');
+                        } else if (section.includes("Trainable:")) {
+                            featureData.trainable = section.replace("Trainable:", "").trim().replace(/\\r\\n/g, '<br>');
+                        } else if (section.includes("Diet:")) {
+                            featureData.diet = section.replace("Diet:", "").trim().replace(/\\r\\n/g, '<br>');
+                        }                        
+                        else if (section.includes("Habitat:")) {
+                            featureData.habitat = section.replace("Habitat:", "").trim().replace(/\\r\\n/g, '<br>');
+                        
+                    }
+                    });
+
+                    // Construct the detailed information with split features
+                    dragonDetailsContainer.innerHTML = `
+                        <div class="dragon-card">
+                            <img src="${imageUrl}" alt="${dragonName}">
+                            <h2>${dragonName}</h2>
+                            <p><strong>Class:</strong> ${dragonClass}</p>
+
+                            <div class="details-section">
+                                <h3>Features & Abilities:</h3>
+                                <p><strong>Features:</strong> ${featureData.features || 'N/A'}</p>
+                                <p><strong>Abilities:</strong> ${featureData.abilities || 'N/A'}</p>
+                                <p><strong>Colors:</strong> ${featureData.colors || 'N/A'}</p>
+                                <p><strong>Size:</strong> ${featureData.size || 'N/A'}</p>
+                                <p><strong>Weight:</strong> ${featureData.weight || 'N/A'}</p>
+                                <p><strong>Wingspan:</strong> ${featureData.wingspan || 'N/A'}</p>
+                                <p><strong>Trainable:</strong> ${featureData.trainable || 'N/A'}</p>
+                                <p><strong>Habitat:</strong> ${featureData.habitat || 'N/A'}</p>
+                                <p><strong>Diet:</strong> ${featureData.diet || 'N/A'}</p>
+                            </div>
+
+                            <a href="${fandomLink}" target="_blank" class="back-button">View on Fandom</a>
+                            <a href="index.html" class="back-button">Back to Dragon List</a>
+                        </div>
+                    `;
+                } else {
+                    document.getElementById('dragonDetails').innerHTML = '<p>Dragon not found.</p>';
+                }
+            })
+            .catch(error => {
+                console.error('Error loading dragon data:', error);
+            });
+
+    </script>
+</body>
+
+</html>

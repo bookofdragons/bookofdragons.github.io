@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of Dragons</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+
+        body {
+            font-family: 'IM Fell English', serif;
+            background: url('parchment-texture.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Banner container */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 12.5%;
+            /* Maintain aspect ratio (height: width = 1:8) */
+            background: url('banner.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            z-index: 0;
+        }
+
+        /* Title text inside the banner */
+        .banner-text {
+            font-size: 4vw;
+            /* Smaller responsive size */
+            font-weight: bold;
+            color: #4A2002;
+            text-align: center;
+            border-radius: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.6);
+            /* Semi-transparent white */
+            width: 90%;
+            max-width: 650px;
+            /* Prevent it from being too wide */
+            box-sizing: border-box;
+            line-height: 1.1;
+            z-index: 1;
+        }
+
+        /* Ensures the title stays vertically centered in the banner */
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h2 {
+            text-align: center;
+            color: #4A2002;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 32px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 120px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .dragon-card {
+            background: rgba(255, 245, 230, 0.9);
+            border: 2px solid #4A2002;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .dragon-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 8px;
+            border: 2px solid #4A2002;
+        }
+
+        .dragon-card h3 {
+            color: #7B3E19;
+            margin: 10px 0;
+        }
+
+        .dragon-card p {
+            color: #4A2002;
+        }
+
+        .button {
+            background: #7B3E19;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #5A2D12;
+        }
+
+        /* Search Bar Styles */
+        .search-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .search-bar {
+            font-size: 16px;
+            padding: 10px;
+            border: 2px solid #4A2002;
+            border-radius: 8px;
+            width: 50%;
+            max-width: 400px;
+            background-color: rgba(255, 245, 230, 0.9);
+            color: #4A2002;
+            box-sizing: border-box;
+        }
+
+        .search-bar:focus {
+            outline: none;
+            border-color: #7B3E19;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner-text">Book Of Dragons</div> <!-- Centered Text on the Banner -->
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchBar" class="search-bar" placeholder="Search for a Dragon by name..."
+            onkeyup="searchDragons()">
+    </div>
+
+    <br>
+    <br>
+    <div class="container" id="dragonList">
+        <!-- Dragon cards will be dynamically inserted here -->
+    </div>
+
+    <script>
+        // Fetch the dragons data
+        fetch('dragons.json')
+            .then(response => response.json())
+            .then(data => {
+                if (data && data.rows) {
+                    const dragonList = document.getElementById('dragonList');
+                    data.rows.forEach((dragon) => {
+                        const dragonName = dragon[1];
+                        const dragonClass = dragon[2];
+                        const imageUrl = dragon[4];
+                        const dragonId = dragon[0];
+
+                        const dragonCard = document.createElement('div');
+                        dragonCard.classList.add('dragon-card');
+                        dragonCard.setAttribute('data-dragon-name', dragonName.toLowerCase()); // Store dragon name for search
+                        dragonCard.innerHTML = ` 
+                        <img src="${imageUrl}" alt="${dragonName}">
+                        <h3>${dragonName}</h3>
+                        <p><strong>Class:</strong> ${dragonClass}</p>
+                        <a href="dragon_detail.html?id=${dragonId}" class="button">More Info</a>
+                    `;
+                        dragonList.appendChild(dragonCard);
+                    });
+                } else {
+                    console.error('Invalid data format:', data);
+                }
+            })
+            .catch(error => {
+                console.error('Error loading dragon data:', error);
+            });
+
+        // Search function to filter dragons based on the input
+        function searchDragons() {
+            const searchQuery = document.getElementById('searchBar').value.toLowerCase();
+            const dragonCards = document.querySelectorAll('.dragon-card');
+
+            dragonCards.forEach(card => {
+                const dragonName = card.getAttribute('data-dragon-name');
+                if (dragonName.includes(searchQuery)) {
+                    card.style.display = ''; // Show the card
+                } else {
+                    card.style.display = 'none'; // Hide the card
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
