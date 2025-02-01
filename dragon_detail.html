@@ -127,7 +127,8 @@
                         weight: '',
                         wingspan: '',
                         trainable: '',
-                        habitat: ''
+                        habitat: '',
+                        diet: ''
                     };
 
                     // Assign each section to its correct category
@@ -146,13 +147,11 @@
                             featureData.wingspan = section.replace("Wingspan:", "").trim().replace(/\\r\\n/g, '<br>');
                         } else if (section.includes("Trainable:")) {
                             featureData.trainable = section.replace("Trainable:", "").trim().replace(/\\r\\n/g, '<br>');
+                        } else if (section.includes("Habitat:")) {
+                            featureData.habitat = section.replace("Habitat:", "").trim().replace(/\\r\\n/g, '<br>');
                         } else if (section.includes("Diet:")) {
                             featureData.diet = section.replace("Diet:", "").trim().replace(/\\r\\n/g, '<br>');
-                        }                        
-                        else if (section.includes("Habitat:")) {
-                            featureData.habitat = section.replace("Habitat:", "").trim().replace(/\\r\\n/g, '<br>');
-                        
-                    }
+                        }
                     });
 
                     // Construct the detailed information with split features
@@ -176,7 +175,8 @@
                             </div>
 
                             <a href="${fandomLink}" target="_blank" class="back-button">View on Fandom</a>
-                            <a href="index.html" class="back-button">Back to Dragon List</a>
+                            <!-- Fixed Back button to return to previous page -->
+                            <a href="javascript:history.back()" class="back-button">Back to Dragon List</a>
                         </div>
                     `;
                 } else {
@@ -186,7 +186,6 @@
             .catch(error => {
                 console.error('Error loading dragon data:', error);
             });
-
     </script>
 </body>
 
