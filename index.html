@@ -85,6 +85,40 @@
             gap: 20px;
             padding: 20px;
         }
+        /* Centered search and filter container */
+        .search-filter-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .search-bar,
+        .filter-dropdown {
+            font-size: 16px;
+            padding: 10px;
+            border: 2px solid #4A2002;
+            border-radius: 8px;
+            background-color: rgba(255, 245, 230, 0.9);
+            color: #4A2002;
+            box-sizing: border-box;
+        }
+
+        .search-bar {
+            width: 50%;
+            max-width: 400px;
+        }
+
+        .filter-dropdown {
+            width: 180px;
+            cursor: pointer;
+        }
+
+        .filter-dropdown:focus {
+            outline: none;
+            border-color: #7B3E19;
+        }
 
         .dragon-card {
             background: rgba(255, 245, 230, 0.9);
@@ -158,6 +192,23 @@
 <body>
     <div class="banner">
         <div class="banner-text">Book Of Dragons</div> <!-- Centered Text on the Banner -->
+    </div>
+
+    div class="search-filter-container">
+        <input type="text" id="searchBar" class="search-bar" placeholder="Search for a Dragon by name..."
+            onkeyup="filterDragons()">
+
+        <select id="classFilter" class="filter-dropdown" onchange="filterDragons()">
+            <option value="all">Filter by Class</option>
+            <option value="Stoker">Stoker</option>
+            <option value="Boulder">Boulder</option>
+            <option value="Tracker">Tracker</option>
+            <option value="Sharp">Sharp</option>
+            <option value="Tidal">Tidal</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Strike">Strike</option>
+            <option value="Unknown">Unknown</option>
+        </select>
     </div>
 
     <!-- Search Bar -->
