@@ -85,6 +85,7 @@
             gap: 20px;
             padding: 20px;
         }
+
         /* Centered search and filter container */
         .search-filter-container {
             display: flex;
@@ -92,6 +93,10 @@
             align-items: center;
             gap: 15px;
             margin: 30px 0;
+            max-width: 1000px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .search-bar,
@@ -194,7 +199,8 @@
         <div class="banner-text">Book Of Dragons</div> <!-- Centered Text on the Banner -->
     </div>
 
-    div class="search-filter-container">
+    <!-- Centered search and filter container -->
+    <div class="search-filter-container">
         <input type="text" id="searchBar" class="search-bar" placeholder="Search for a Dragon by name..."
             onkeyup="filterDragons()">
 
@@ -211,14 +217,7 @@
         </select>
     </div>
 
-    <!-- Search Bar -->
-    <div class="search-container">
-        <input type="text" id="searchBar" class="search-bar" placeholder="Search for a Dragon by name..."
-            onkeyup="searchDragons()">
-    </div>
-
-    <br>
-    <br>
+    <!-- Dragon List -->
     <div class="container" id="dragonList">
         <!-- Dragon cards will be dynamically inserted here -->
     </div>
@@ -255,37 +254,25 @@
                 console.error('Error loading dragon data:', error);
             });
 
-        // Search function to filter dragons based on the input
-        function searchDragons() {
+        // Function to filter dragons by name and class
+        function filterDragons() {
             const searchQuery = document.getElementById('searchBar').value.toLowerCase();
+            const selectedClass = document.getElementById('classFilter').value;
             const dragonCards = document.querySelectorAll('.dragon-card');
 
             dragonCards.forEach(card => {
                 const dragonName = card.getAttribute('data-dragon-name');
-                if (dragonName.includes(searchQuery)) {
+                const dragonClass = card.querySelector('p').textContent.toLowerCase();
+
+                const matchesName = dragonName.includes(searchQuery);
+                const matchesClass = selectedClass === "all" || dragonClass.includes(selectedClass.toLowerCase());
+
+                if (matchesName && matchesClass) {
                     card.style.display = ''; // Show the card
                 } else {
                     card.style.display = 'none'; // Hide the card
                 }
             });
-        }
-
-        // Function to filter dragons by name and class
-        function filterDragons() {
-            const searchQuery = document.getElementById('searchBar').value.toLowerCase();
-            const selectedClass = document.getElementById('classFilter').value;
-
-            const filteredDragons = dragonsData.filter(dragon => {
-                const dragonName = dragon[1].toLowerCase();
-                const dragonClass = dragon[2];
-
-                const matchesName = dragonName.includes(searchQuery);
-                const matchesClass = selectedClass === "all" || dragonClass === selectedClass;
-
-                return matchesName && matchesClass;
-            });
-
-            displayDragons(filteredDragons);
         }
     </script>
 </body>
