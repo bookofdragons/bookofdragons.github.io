@@ -222,59 +222,10 @@
         <!-- Dragon cards will be dynamically inserted here -->
     </div>
 
-    <script>
-        // Fetch the dragons data
-        fetch('dragons.json')
-            .then(response => response.json())
-            .then(data => {
-                if (data && data.rows) {
-                    const dragonList = document.getElementById('dragonList');
-                    data.rows.forEach((dragon) => {
-                        const dragonName = dragon[1];
-                        const dragonClass = dragon[2];
-                        const imageUrl = dragon[4];
-                        const dragonId = dragon[0];
+    <script src="scripts.js"></script>
 
-                        const dragonCard = document.createElement('div');
-                        dragonCard.classList.add('dragon-card');
-                        dragonCard.setAttribute('data-dragon-name', dragonName.toLowerCase()); // Store dragon name for search
-                        dragonCard.innerHTML = ` 
-                        <img src="${imageUrl}" alt="${dragonName}">
-                        <h3>${dragonName}</h3>
-                        <p><strong>Class:</strong> ${dragonClass}</p>
-                        <a href="dragon_detail.html?id=${dragonId}" class="button">More Info</a>
-                    `;
-                        dragonList.appendChild(dragonCard);
-                    });
-                } else {
-                    console.error('Invalid data format:', data);
-                }
-            })
-            .catch(error => {
-                console.error('Error loading dragon data:', error);
-            });
 
-        // Function to filter dragons by name and class
-        function filterDragons() {
-            const searchQuery = document.getElementById('searchBar').value.toLowerCase();
-            const selectedClass = document.getElementById('classFilter').value;
-            const dragonCards = document.querySelectorAll('.dragon-card');
 
-            dragonCards.forEach(card => {
-                const dragonName = card.getAttribute('data-dragon-name');
-                const dragonClass = card.querySelector('p').textContent.toLowerCase();
-
-                const matchesName = dragonName.includes(searchQuery);
-                const matchesClass = selectedClass === "all" || dragonClass.includes(selectedClass.toLowerCase());
-
-                if (matchesName && matchesClass) {
-                    card.style.display = ''; // Show the card
-                } else {
-                    card.style.display = 'none'; // Hide the card
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
