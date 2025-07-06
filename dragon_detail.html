@@ -89,7 +89,9 @@
         }
     </style>
 </head>
-
+<header>
+    <div id="google_translate_element"></div>
+</header>
 <body>
     <div class="container" id="dragonDetails">
         <!-- Dragon details will be dynamically inserted here -->
@@ -187,6 +189,18 @@
                 console.error('Error loading dragon data:', error);
             });
     </script>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',       // Your site's original language
+            includedLanguages: 'en,es,fr,de,zh,ja,ko,pt,be,hi,zh-CN,ta,vi,uk,tr,sv,sl,sk,sr,ro,ru,pt-PT,pl,no,lt,lv,it,id,is,hu,el,fi,fil,nl,da,ar', // Languages you want to support, or leave out to support all
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+                }
+            </script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
 </body>
 
 </html>
